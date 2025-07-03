@@ -1,0 +1,13 @@
+{
+    "nodes": [
+      {"id": "input", "type": "function"},
+      {"id": "processing", "type": "function"},
+      {"id": "recommendation", "type": "function"}
+    ],
+    "edges": [
+      {"source": "input", "target": "processing"},
+      {"source": "processing", "target": "recommendation"},
+      {"source": "recommendation", "target": "__end__"}
+    ],
+    "entry_point": "input"
+  }

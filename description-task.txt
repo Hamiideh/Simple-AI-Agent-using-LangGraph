@@ -1,0 +1,55 @@
+Task: Build a Simple AI Agent Using LangGraph 
+Objective:
+Create an AI Agent that analyzes basic business data (e.g., daily sales and costs) and generates a summary report with actionable recommendations.
+
+Task Description:
+
+Set up LangGraph environment (locally or on the cloud).
+
+Build a simple graph with these nodes:
+
+Input node that receives data (e.g., sales and cost data as a Python dictionary or JSON).
+
+Processing node that calculates key metrics such as profit, simple CAC, and compares today’s sales/costs with the previous day.
+
+Recommendation node that outputs advice based on the calculations (e.g., warn if CAC increased, suggest increasing marketing budget if sales grew).
+
+Run the Agent and produce an output:
+
+The output should be a dictionary or JSON object containing:
+
+Profit/loss status
+
+Any alerts or warnings
+
+Decision-making recommendations
+
+Write a simple test that validates the Agent’s output correctness for sample input data.
+
+Important Evaluation Criteria:
+
+Code structure and readability
+
+Proper usage of LangGraph and graph design
+
+Logic accuracy in data analysis
+
+Clarity and usefulness of the output recommendations
+
+Test quality and coverage
+
+Expected Processing:
+
+Calculate daily profit = daily_revenue - daily_cost
+
+Calculate percentage changes compared to previous day (revenue and cost)
+
+Check if CAC (Customer Acquisition Cost) increased more than 20% (you can assume CAC = cost / number_of_customers)
+
+Generate recommendations such as:
+
+"Reduce costs if profit is negative"
+
+"Review marketing campaigns if CAC increased significantly"
+
+"Consider increasing advertising budget if sales are growing"
