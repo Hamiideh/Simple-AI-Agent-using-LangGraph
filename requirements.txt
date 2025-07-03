@@ -1,2 +1,7 @@
 langgraph
+langchain_anthropic
+langchain_core
+tavily_python
+langchain_community
+langchain_openai
 pytest
